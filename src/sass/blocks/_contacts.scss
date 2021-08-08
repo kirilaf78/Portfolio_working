@@ -1,0 +1,113 @@
+.contacts {
+  padding: 160px 0 90px 0;
+  &__wrapper {
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 452px 585px;
+  }
+  &__block {
+      padding-top: 7px;
+      .title.title_fz16px {
+       padding: 0 0 0 12px;
+       position: relative;
+       @include promo_circle;
+       &:before {
+        top: -7px;
+       }
+      }
+     
+      .divider {
+        margin: 0;
+      }
+  
+  }
+  &__text {
+    margin-top: 20px;
+    font-weight: 700;
+  }  
+  &__social {
+    margin-top: 20px;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      } 
+    }
+  &__text_bottom {
+    margin-top: 20px;
+    font-weight: 700;
+  } 
+  &__form {
+    margin-top: 30px;
+  } 
+  &__input__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 45px 190px;
+    justify-content: space-between;
+    row-gap: 30px;
+
+  }
+  &__input {
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  
+  }
+  
+  &__label {
+    position: absolute;
+    margin-bottom: 0;
+    top: -8px;
+    left: 10px;
+    background: #fff;
+    padding: 0 8px;
+}
+  
+ &__textarea {
+    grid-column: 1 / 3 ;
+    position: relative;
+    textarea {
+      width: 100%;
+      height: 190px;
+      resize: none;
+      position: absolute;
+      padding: 20px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+ 
+  }
+  &__footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+  }
+  &__btn {
+    width: 219px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+
+  }
+  &__policy {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 35px;
+    span {
+      margin-left: 10px;
+    }
+      }
+  &__footer_min {
+    display: none;
+  }    
+}
+

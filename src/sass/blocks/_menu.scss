@@ -1,0 +1,85 @@
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  left: -100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.6s;
+  &.active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  nav {
+    position: relative;
+    width: 345px;
+    height: 100vh;
+    background:$main-color;
+    z-index: 15;
+  }
+
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+  &__list {
+    padding: 140px 0 0 75px;
+    list-style-type: none;
+    &__link {
+      position: relative;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 15px;
+      a {
+        color: #FFFFFF;
+      }
+      &:before {
+        position: absolute;
+        top: 28%;
+        left: -35px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000000;
+        border-radius: 100%;
+        background: $main-color;
+        transition: all 0.6s;
+      }
+      &:hover {
+        &:before {
+          background-color:$hover-color;
+
+        }
+        }
+      
+      
+    }
+  }
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.75;
+    }
+  
+  .promo__social__icons_nav {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
